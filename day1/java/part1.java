@@ -1,4 +1,5 @@
 //Note: Most parts of this code are just some utility functions in order to get a working code as fast as possible
+//Finished in 00:00:49, 41st place
 
 import java.awt.*;
 import java.awt.datatransfer.Clipboard;
