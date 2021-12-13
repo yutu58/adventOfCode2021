@@ -108,26 +108,6 @@ public class Main {
         }
     }
 
-    public static long traverse(Map<String, List<String>> map, String src, List<String> visited, Boolean bool) {
-        if (src.equals("end")) {
-            return 1;
-        } else if (!src.equals("start") && src.charAt(0) >= 'a' && (Collections.frequency(visited, src) == 1) && !bool) {
-            bool = true;
-        }
-        else if (src.charAt(0) >= 'a' && (Collections.frequency(visited, src) > 0)) {
-            return 0;
-        }
-
-        visited.add(src);
-        Long total = 0L;
-        for (String s : map.get(src)) {
-            List<String> list = new ArrayList<>(visited);
-            long tempres = traverse(map, s, list, bool);
-            total += tempres;
-        }
-        return total;
-    }
-
     public static String readFile(String path) {
         try {
             return Files.readString(Path.of(path));
