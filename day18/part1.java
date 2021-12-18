@@ -1,9 +1,5 @@
 //Note: Most of this code are just some utility functions in order to get a working code as fast as possible
 
-import com.sun.source.tree.BinaryTree;
-import com.sun.source.tree.ExpressionTree;
-import com.sun.source.tree.TreeVisitor;
-
 import java.awt.*;
 import java.awt.datatransfer.Clipboard;
 import java.awt.datatransfer.StringSelection;
